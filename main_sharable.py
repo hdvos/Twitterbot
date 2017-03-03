@@ -42,8 +42,14 @@ for i in range(MAXTWEETS):
     tweet = ngsg.generate_tweet(ngram_dict, hashtags)
 
     if not tweet is None:
-        print("tweeting: {}".format(tweet))
-        api.update_status(tweet)
+        try:
+            api.update_status(tweet)
+            print("tweeting: {}".format(tweet))
+
+        except tweepy.TweepError:
+            tweet = ngsg.generate_tweet(ngram_dict, hashtags)
+            api.update_status(tweet)
+            print("tweeting: {}".format(tweet)
 
     else:
         print ("could not generate tweet, Terminate program")
