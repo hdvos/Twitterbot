@@ -6,10 +6,10 @@ import n_gram_sentence_generator as ngsg
 from support_funcs import *
 
 
-CONSUMER_KEY = 'eqeA2ZbySp6C4VwsCzMuwwJvl'
-CONSUMER_SECRET = 'CyZ5BIsVCRhsk8FIWuM7iPOzftI74a1OiUp4OQMynp4gW5cBYW'
-TOKEN = '1026921204-95VeSjxtkDvgjBMUjE5lcnjnBNkIzijczh4QSoa'
-SECRET_TOKEN = 'm3fpO44bVKjPrBhtdppdXH8AjgQvQQtsVRTbU12Azepv4'
+CONSUMER_KEY = 'add key'
+CONSUMER_SECRET = 'add secret key'
+TOKEN = 'add token'
+SECRET_TOKEN = 'add secret token'
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(TOKEN, SECRET_TOKEN)
 api = tweepy.API(auth)
