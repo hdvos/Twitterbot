@@ -2,6 +2,8 @@
 Functions to generate random texts on the basis of trigrams
 TODO: many functions could (and should) be more efficient.
 '''
+import random
+
 
 '''
 reads a text and returns a string containing this text
